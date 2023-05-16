@@ -22,6 +22,6 @@ IPA is generated and working.
 
 # Step to reproduce
 
-- Update the bundle id name
-- Provide your signing key and profile
+- Update the "Bundle Identifier" name in Info.plist
+- Provide your signing identity and provisioning profile
 - Build IPA
