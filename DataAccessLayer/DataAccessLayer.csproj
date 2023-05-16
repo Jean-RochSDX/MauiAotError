@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;ReleaseError</Configurations>
+  </PropertyGroup>
+	
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+	<UseMauiEssentials>true</UseMauiEssentials>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(Configuration)'=='Debug' Or '$(Configuration)'=='ReleaseError'">
+    <PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.0-preview.3.8149" />
+  </ItemGroup>
+
+</Project>
